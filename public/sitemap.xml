@@ -3,26 +3,7 @@
   <url>
     <loc>https://institutoitas.com/</loc>
     <lastmod>2026-01-26</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://institutoitas.com/#filosofia</loc>
-    <lastmod>2026-01-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://institutoitas.com/#teoria</loc>
-    <lastmod>2026-01-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://institutoitas.com/#especialistas</loc>
-    <lastmod>2026-01-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://institutoitas.com/politica-privacidad/</loc>
