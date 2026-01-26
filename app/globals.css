@@ -1,26 +1,94 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Neulis Neue */
+@font-face {
+  font-family: "Neulis Neue";
+  src: url("/fonts/fonnts.com-Neulis_Neue_Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neulis Neue";
+  src: url("/fonts/fonnts.com-Neulis_Neue_Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Neulis Neue";
+  src: url("/fonts/fonnts.com-Neulis_Neue_Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neulis Neue";
+  src: url("/fonts/fonnts.com-Neulis_Neue_Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neulis Neue";
+  src: url("/fonts/fonnts.com-Neulis_Neue_Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neulis Neue";
+  src: url("/fonts/fonnts.com-Neulis_Neue_Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Neulis Sans */
+@font-face {
+  font-family: "Neulis Sans";
+  src: url("/fonts/fonnts.com-Neulis_Sans_Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neulis Sans";
+  src: url("/fonts/fonnts.com-Neulis_Sans_Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Neulis Sans";
+  src: url("/fonts/fonnts.com-Neulis_Sans_Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neulis Sans";
+  src: url("/fonts/fonnts.com-Neulis_Sans_Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neulis Sans";
+  src: url("/fonts/fonnts.com-Neulis_Sans_Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neulis Sans";
+  src: url("/fonts/fonnts.com-Neulis_Sans_Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  --color-ocean: #32435c;
+  --color-gold: #e1aa5d;
+  --font-neulis-neue: "Neulis Neue", serif;
+  --font-neulis-sans: "Neulis Sans", sans-serif;
 }
