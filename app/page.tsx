@@ -124,16 +124,16 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-ocean/60"></div>
         <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center text-white">
-          <h2 className="font-neulis-neue text-5xl font-bold md:text-7xl">
+          <h2 className="font-neulis-neue text-4xl font-semibold md:text-6xl">
             Nuestra propuesta <br/> se fundamenta en la 
           </h2>
-          <h3 className="font-neulis-neue font-semibold text-3xl md:text-5xl text-gold mt-4">
+          <h3 className="font-neulis-neue font-medium text-2xl md:text-4xl text-gold mt-4">
           Teoría de la Mente <br/> Triádica Daléctica (TMTD)
           </h3>
-          <p className="mt-6 max-w-2xl font-neulis-sans text-start text-lg md:text-xl">
+          <p className="mt-6 max-w-2xl font-neulis-sans text-justify text-lg md:text-xl">
             Abordar los modos contemporáneos de vincularse y sufrir. Integrando: En lo corporal (la memoria y expresión), lo emocional (el mapa de los afectos y sentimientos) y los simbólico (el lenguaje, la cultura y el sentido de la existencia).
           </p>  
-          <button className="text-white bg-gold rounded-full px-4 py-2 font-neulis-neue mt-4">Conoce más</button>
+          <button className="text-white bg-gold rounded-full px-4 py-2 font-neulis-neue mt-8">Conoce más</button>
         </div>
       </section>
       <section id="especialistas" className="py-20 bg-white">
