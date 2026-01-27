@@ -105,11 +105,11 @@ export default function Home() {
             />
             <div className="font-neulis-neue grid sm:grid-cols-2 gap-6" id="valores">
               {valores.map((valor, index) => (
-                <div key={index} className=" space-y-4 max-w-56">
-                  <valor.icon className="size-10 text-white bg-ocean p-2 rounded-md" />
-                  <div className="space-y-3">
-                    <h5 className="font-medium">{valor.title}</h5>
-                    <p className="text-sm">{valor.description}</p>
+                <div key={index} className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 max-w-56 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                  <valor.icon className="size-11 text-white bg-ocean p-2.5 rounded-xl group-hover:bg-gold transition-colors duration-300" />
+                  <div className="mt-3 space-y-2">
+                    <h5 className="font-semibold text-lg">{valor.title}</h5>
+                    <p className="text-sm text-ocean/70 leading-relaxed">{valor.description}</p>
                   </div>
                 </div>
               ))}
@@ -154,7 +154,7 @@ export default function Home() {
                 <div className="font-neulis-neue text-ocean">
                   <h3 className="text-lg font-semibold">{especialista.name}</h3>
                   {especialista.code && (
-                    <span className="text-sm text-gold font-medium">CPP {especialista.code}</span>
+                   <span className="text-sm text-gold font-medium">CPP {especialista.code}</span>
                   )}
                   <p className="mt-2 text-sm">{especialista.description}</p>
                 </div>

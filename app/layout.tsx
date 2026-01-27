@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
   title: "ITAS | Instituto Triádico de Análisis del Sujeto",
@@ -62,6 +63,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
+        <WhatsAppButton />
         {children}
       </body>
     </html>

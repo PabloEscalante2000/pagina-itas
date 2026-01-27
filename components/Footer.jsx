@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Linkedin, Instagram } from "lucide-react";
 
 function Footer() {
   return (
@@ -16,6 +16,17 @@ function Footer() {
               height={60}
               className="object-contain"
             />
+            <div className="flex gap-4 mt-4">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-gold transition-colors">
+                <Facebook className="size-5" />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-gold transition-colors">
+                <Linkedin className="size-5" />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-gold transition-colors">
+                <Instagram className="size-5" />
+              </a>
+            </div>
           </div>
 
           {/* Contacto */}

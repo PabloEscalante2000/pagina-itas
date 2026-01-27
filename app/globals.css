@@ -92,3 +92,29 @@
   --font-neulis-neue: "Neulis Neue", serif;
   --font-neulis-sans: "Neulis Sans", sans-serif;
 }
+
+@keyframes ping-wave {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+.whatsapp-pulse::before,
+.whatsapp-pulse::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: rgba(34, 197, 94, 0.4);
+  z-index: -1;
+  animation: ping-wave 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.whatsapp-pulse::after {
+  animation-delay: 1s;
+}
