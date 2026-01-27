@@ -47,11 +47,11 @@ const especialistas = [
   }
 ]
 
-const seminarios = [
-  {
+// const seminarios = [
+//   {
 
-  }
-]
+//   }
+// ]
 
 export default function Home() {
   return (
@@ -70,7 +70,7 @@ export default function Home() {
           <h3 className="font-neulis-neue font-semibold text-3xl md:text-5xl text-gold mt-4">
             Instituto Triádico de Análisis del Sujeto
           </h3>
-          <p className="mt-6 max-w-2xl font-neulis-sans text-start text-lg md:text-xl">
+          <p className="mt-6 max-w-2xl font-neulis-sans text-center text-lg md:text-xl">
             Espacio de reflexión clínica abierta para docentes, padres y profesionales en la tarea de ampliar su capacidad de compresión, conocimientos que conserve su rigor ético y profundidad humana.
           </p>
         </div>
