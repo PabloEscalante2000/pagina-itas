@@ -5,30 +5,32 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 export const metadata: Metadata = {
   title: "ITAS | Instituto Triádico de Análisis del Sujeto",
   description:
-    "Espacio de reflexión clínica abierta para docentes, padres y profesionales. Formación basada en la Teoría de la Mente Triádica Dialéctica (TMTD). Seminarios, talleres y grupos de reflexión en Miraflores, Lima.",
+    "Instituto dedicado a la formación, reflexión clínica y producción de contenidos terapéuticos. Formación para profesionales, seminarios para padres y docentes, y editorial especializada basada en la TMTD.",
   keywords: [
     "ITAS",
     "Instituto Triádico de Análisis del Sujeto",
     "psicología clínica",
     "TMTD",
     "Teoría de la Mente Triádica Dialéctica",
+    "formación terapeutas",
     "seminarios psicología",
     "talleres psicología",
     "formación psicoterapéutica",
-    "psicoanálisis",
-    "neuropsicología",
+    "editorial terapéutica",
+    "cuentos infantiles terapéuticos",
+    "César Escalante",
     "Miraflores",
     "Lima",
     "Perú",
   ],
-  authors: [{ name: "Instituto Triádico de Análisis del Sujeto" }],
+  authors: [{ name: "ITAS - Instituto Triádico de Análisis del Sujeto" }],
   creator: "ITAS",
   publisher: "ITAS",
   metadataBase: new URL("https://institutoitas.com"),
   openGraph: {
     title: "ITAS | Instituto Triádico de Análisis del Sujeto",
     description:
-      "Espacio de reflexión clínica abierta para docentes, padres y profesionales. Formación que transforma basada en la TMTD.",
+      "Una marca que forma, piensa y crea en salud mental. Formación, seminarios y editorial especializada basada en la TMTD.",
     url: "https://institutoitas.com",
     siteName: "ITAS",
     locale: "es_PE",
@@ -46,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ITAS | Instituto Triádico de Análisis del Sujeto",
     description:
-      "Espacio de reflexión clínica abierta para docentes, padres y profesionales.",
+      "Una marca que forma, piensa y crea en salud mental. Formación, seminarios y editorial especializada.",
     images: ["/assets/itas_banner.png"],
   },
   robots: {

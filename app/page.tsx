@@ -1,62 +1,74 @@
 import Nav from "@/components/Nav";
 import Image from "next/image";
-import { BookOpen, Brain, Heart, Users } from "lucide-react";
+import Link from "next/link";
+import { GraduationCap, Users, BookOpen, Brain, Heart, Sparkles } from "lucide-react";
 import Footer from "@/components/Footer";
 
-const valores = [
+const pilares = [
   {
-    icon: BookOpen,
-    title: "Profesional",
-    description: "Postgrados, seminarios clínicos y grupos de reflexión para psicólogos.",
-  },
-  {
-    icon: Brain,
-    title: "Educación",
-    description: "Talleres para docentes y conferencias sobre el contexto cultural.",
-  },
-  {
-    icon: Heart,
-    title: "Familias",
-    description: "Contenido específico para padres y sobre la crianza y el vínculo desde la TMTD.",
+    icon: GraduationCap,
+    title: "Formación para terapeutas",
+    description: "Programas formativos, diplomados y seminarios clínicos especializados para profesionales de la salud mental.",
+    href: "/formacion",
   },
   {
     icon: Users,
-    title: "Social",
-    description: "Charlas y actividades abiertas a la comunidad en general.",
+    title: "Seminarios y talleres abiertos",
+    description: "Espacios de aprendizaje para padres, docentes y público general sobre infancia, vínculos y subjetividad.",
+    href: "/seminarios",
   },
-]
+  {
+    icon: BookOpen,
+    title: "Editorial especializada",
+    description: "Libros académicos, ensayos clínicos y cuentos infantiles con enfoque terapéutico.",
+    href: "/editorial",
+  },
+];
+
+const enfoques = [
+  {
+    icon: Brain,
+    title: "Lo corporal",
+    description: "La memoria y expresión del cuerpo como territorio de la experiencia.",
+  },
+  {
+    icon: Heart,
+    title: "Lo emocional",
+    description: "El mapa de los afectos y sentimientos que configuran nuestra subjetividad.",
+  },
+  {
+    icon: Sparkles,
+    title: "Lo simbólico",
+    description: "El lenguaje, la cultura y el sentido de la existencia.",
+  },
+];
 
 const especialistas = [
   {
-    name:"Cesar Escalante",
+    name: "César Escalante",
     code: 29611,
-    description: "Psicólogo Clínico con Maestría en Neuropsicología.",
-    img:"/assets/cesar.jpg"
+    description: "Psicólogo clínico, psicoterapeuta y neuropsicólogo. Creador de la TMTD con más de 25 años de experiencia.",
+    img: "/assets/cesar.jpg",
   },
   {
-    name:"Melissa Huaman",
-    code:null,
-    description:"Facilitadora psicoterapéutica. Piscoanalítica.",
-    img:"/assets/melissa.jpg"
+    name: "Melissa Huaman",
+    code: null,
+    description: "Facilitadora psicoterapéutica. Psicoanalítica.",
+    img: "/assets/melissa.jpg",
   },
   {
-    name:"Catherine Cermeño",
-    code:35863,
-    description:"Psicóloga Clínica y psicoterapeuta psicoanalítica.",
-    img:"/assets/catherine.jpg"
-  }
-]
-
-// const seminarios = [
-//   {
-
-//   }
-// ]
+    name: "Catherine Cermeño",
+    code: 35863,
+    description: "Psicóloga Clínica y psicoterapeuta psicoanalítica.",
+    img: "/assets/catherine.jpg",
+  },
+];
 
 export default function Home() {
   return (
     <>
-      <Nav/>
+      <Nav />
+      {/* Hero */}
       <main
         id="banner"
         className="relative min-h-screen bg-cover bg-center bg-no-repeat"
@@ -67,83 +79,148 @@ export default function Home() {
           <h1 className="font-neulis-neue text-5xl font-bold md:text-7xl">
             Bienvenidos a ITAS
           </h1>
-          <h3 className="font-neulis-neue font-semibold text-3xl md:text-5xl text-gold mt-4">
+          <h3 className="font-neulis-neue font-semibold text-2xl md:text-4xl text-gold mt-4">
             Instituto Triádico de Análisis del Sujeto
           </h3>
-          <p className="mt-6 max-w-2xl font-neulis-sans text-center text-lg md:text-xl">
-            Espacio de reflexión clínica abierta para docentes, padres y profesionales en la tarea de ampliar su capacidad de compresión, conocimientos que conserve su rigor ético y profundidad humana.
+          <p className="mt-6 max-w-3xl font-neulis-sans text-center text-lg md:text-xl">
+            Una marca que forma, piensa y crea en salud mental. Dedicados a la formación, la reflexión clínica y la producción de contenidos terapéuticos.
           </p>
+          <Link
+            href="/nosotros"
+            className="mt-8 bg-gold hover:bg-gold/90 text-white font-neulis-neue px-6 py-3 rounded-full transition-colors"
+          >
+            Conoce más sobre nosotros
+          </Link>
         </div>
       </main>
-      <section id="filosofia" className="my-20">
+
+      {/* Qué es ITAS */}
+      <section id="que-es-itas" className="py-20 bg-white">
         <div className="container mx-auto px-6">
-          <div className="flex items-center justify-center gap-8 sm:flex-row flex-col">
-            <Image
-              src={"/assets/itas_filosofia.png"}
-              alt="Filosofía ITAS"
-              width={300}
-              height={100}
-              className="rounded-xl object-top sm:w-75 w-full"
-            />
-            <div className="font-neulis-neue text-ocean space-y-4">
-              <h4 className="text-3xl font-medium">Nuestra Filosofía</h4>
-              <p>
-                No creemos en recetas.
-                <br/>
-                Creemos en la formación que transforma, en la reflexión que incomoda para sanar y en la palabra que da sentido al sufrimiento contemporáneo.
-              </p>
-              <button className="text-white bg-gold rounded-full px-4 py-2">Conoce más</button>
-            </div>
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="font-neulis-neue text-4xl font-bold text-ocean mb-6">
+              ¿Qué es ITAS?
+            </h2>
+            <p className="font-neulis-sans text-ocean/80 text-lg">
+              ITAS es tres cosas en una sola marca, claramente diferenciadas pero profundamente conectadas. Un espacio donde la clínica, la teoría y la divulgación se encuentran.
+            </p>
           </div>
-          <div className="mt-12 w-full bg-gold/50 p-5 rounded-4xl text-ocean items-center justify-around flex md:flex-row flex-col gap-8 shadow-gold/50 shadow-2xl">
-            <Image
-              src={"/assets/itas_icono.png"}
-              alt="ITAS"
-              width={350}
-              height={100}
-              className={"object-cover rounded-lg"}
-            />
-            <div className="font-neulis-neue grid sm:grid-cols-2 gap-6" id="valores">
-              {valores.map((valor, index) => (
-                <div key={index} className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 max-w-56 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                  <valor.icon className="size-11 text-white bg-ocean p-2.5 rounded-xl group-hover:bg-gold transition-colors duration-300" />
-                  <div className="mt-3 space-y-2">
-                    <h5 className="font-semibold text-lg">{valor.title}</h5>
-                    <p className="text-sm text-ocean/70 leading-relaxed">{valor.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {pilares.map((pilar, index) => (
+              <Link
+                key={index}
+                href={pilar.href}
+                className="group bg-ocean/5 hover:bg-ocean rounded-2xl p-8 transition-all duration-300"
+              >
+                <pilar.icon className="size-14 text-gold mb-4" />
+                <h3 className="font-neulis-neue text-xl font-semibold text-ocean group-hover:text-white mb-3 transition-colors">
+                  {pilar.title}
+                </h3>
+                <p className="font-neulis-sans text-ocean/70 group-hover:text-white/80 transition-colors">
+                  {pilar.description}
+                </p>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
+
+      {/* Aviso importante */}
+      <section className="bg-gold/10 py-8">
+        <div className="container mx-auto px-6">
+          <div className="flex items-start gap-4 max-w-4xl mx-auto">
+            <span className="text-gold text-2xl">📌</span>
+            <p className="font-neulis-sans text-ocean">
+              <strong>Importante:</strong> ITAS no ofrece terapia ni atención clínica directa al público. Nuestra labor es formativa, académica y editorial.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* TMTD */}
       <section
-        id="teoria"
+        id="tmtd"
         className="relative min-h-screen bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/assets/itas_teoria.png')" }}
       >
-        <div className="absolute inset-0 bg-ocean/60"></div>
-        <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center text-white">
-          <h2 className="font-neulis-neue text-4xl font-semibold md:text-6xl">
-            Nuestra propuesta <br/> se fundamenta en la 
+        <div className="absolute inset-0 bg-ocean/70"></div>
+        <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center text-white py-20">
+          <h2 className="font-neulis-neue text-3xl md:text-5xl font-semibold mb-4">
+            Nuestro enfoque
           </h2>
-          <h3 className="font-neulis-neue font-medium text-2xl md:text-4xl text-gold mt-4">
-          Teoría de la Mente <br/> Triádica Daléctica (TMTD)
+          <h3 className="font-neulis-neue font-medium text-2xl md:text-4xl text-gold mb-8">
+            Teoría de la Mente Triádica-Dialéctica (TMTD)
           </h3>
-          <p className="mt-6 max-w-2xl font-neulis-sans text-justify text-lg md:text-xl">
-            Abordar los modos contemporáneos de vincularse y sufrir. Integrando: En lo corporal (la memoria y expresión), lo emocional (el mapa de los afectos y sentimientos) y los simbólico (el lenguaje, la cultura y el sentido de la existencia).
-          </p>  
-          <button className="text-white bg-gold rounded-full px-4 py-2 font-neulis-neue mt-8">Conoce más</button>
+          <p className="max-w-3xl font-neulis-sans text-lg md:text-xl mb-12">
+            Un enfoque que comprende la experiencia humana más allá de diagnósticos rígidos, modas terapéuticas o respuestas simplistas, ofreciendo una comprensión más compleja, humana y contemporánea del malestar psíquico.
+          </p>
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl">
+            {enfoques.map((enfoque, index) => (
+              <div
+                key={index}
+                className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-colors"
+              >
+                <enfoque.icon className="size-12 text-gold mx-auto mb-4" />
+                <h4 className="font-neulis-neue text-xl font-semibold mb-2">
+                  {enfoque.title}
+                </h4>
+                <p className="font-neulis-sans text-white/80 text-sm">
+                  {enfoque.description}
+                </p>
+              </div>
+            ))}
+          </div>
+          <Link
+            href="/tmtd"
+            className="mt-12 bg-gold hover:bg-gold/90 text-white font-neulis-neue px-6 py-3 rounded-full transition-colors"
+          >
+            Conoce más sobre la TMTD
+          </Link>
         </div>
       </section>
-      <section id="especialistas" className="py-20 bg-white">
+
+      {/* Filosofía */}
+      <section id="filosofia" className="py-20">
         <div className="container mx-auto px-6">
-          <h2 className="font-neulis-neue text-4xl font-bold text-ocean text-start mb-12">
-            Especialistas
+          <div className="flex items-center justify-center gap-12 md:flex-row flex-col">
+            <Image
+              src={"/assets/itas_filosofia.png"}
+              alt="Filosofía ITAS"
+              width={400}
+              height={400}
+              className="rounded-2xl object-cover md:w-96 w-full"
+            />
+            <div className="font-neulis-neue text-ocean space-y-6 max-w-xl">
+              <h2 className="text-4xl font-bold">Nuestro propósito</h2>
+              <p className="font-neulis-sans text-lg text-ocean/80">
+                El propósito de ITAS es <strong>formar, pensar y producir conocimiento con sentido</strong>.
+              </p>
+              <p className="font-neulis-sans text-ocean/70">
+                No buscamos simplificar lo complejo, ni vender soluciones mágicas, ni reducir la experiencia humana a fórmulas rápidas. Buscamos acompañar procesos de comprensión, formar profesionales con criterio, y ofrecer contenidos que dejen huella.
+              </p>
+              <p className="font-neulis-sans text-ocean/70 italic">
+                "No creemos en recetas. Creemos en la formación que transforma, en la reflexión que incomoda para sanar y en la palabra que da sentido al sufrimiento contemporáneo."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Especialistas */}
+      <section id="especialistas" className="py-20 bg-ocean/5">
+        <div className="container mx-auto px-6">
+          <h2 className="font-neulis-neue text-4xl font-bold text-ocean text-center mb-4">
+            Nuestro equipo
           </h2>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center flex-wrap">
+          <p className="font-neulis-sans text-ocean/70 text-center max-w-2xl mx-auto mb-12">
+            Profesionales comprometidos con una mirada clínica profunda y humana.
+          </p>
+          <div className="flex flex-col md:flex-row gap-8 justify-center flex-wrap">
             {especialistas.map((especialista, index) => (
-              <div key={index} className="flex items-center gap-4 bg-ocean/5 rounded-2xl p-6 shadow-lg max-w-96">
+              <div
+                key={index}
+                className="flex items-center gap-5 bg-white rounded-2xl p-6 shadow-lg max-w-md"
+              >
                 <Image
                   src={especialista.img}
                   alt={especialista.name}
@@ -154,15 +231,44 @@ export default function Home() {
                 <div className="font-neulis-neue text-ocean">
                   <h3 className="text-lg font-semibold">{especialista.name}</h3>
                   {especialista.code && (
-                   <span className="text-sm text-gold font-medium">CPP {especialista.code}</span>
+                    <span className="text-sm text-gold font-medium">
+                      CPP {especialista.code}
+                    </span>
                   )}
-                  <p className="mt-2 text-sm">{especialista.description}</p>
+                  <p className="mt-2 text-sm text-ocean/70">{especialista.description}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* CTA Final */}
+      <section className="py-20 bg-ocean">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="font-neulis-neue text-3xl md:text-4xl font-bold text-white mb-4">
+            ITAS es un lugar para quienes quieren pensar en serio la experiencia humana
+          </h2>
+          <p className="font-neulis-sans text-white/70 max-w-2xl mx-auto mb-8">
+            Formación para terapeutas, espacios de aprendizaje para padres y docentes, y una editorial especializada con un enfoque propio y coherente.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link
+              href="/formacion"
+              className="bg-gold hover:bg-gold/90 text-white font-neulis-neue px-6 py-3 rounded-full transition-colors"
+            >
+              Ver programas de formación
+            </Link>
+            <Link
+              href="/editorial"
+              className="bg-white/10 hover:bg-white/20 text-white font-neulis-neue px-6 py-3 rounded-full transition-colors border border-white/30"
+            >
+              Explorar editorial
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <Image
         src={"/assets/ites_socrates.png"}
         height={100}
@@ -170,7 +276,7 @@ export default function Home() {
         alt="ITAS Socrates"
         className="w-full object-cover"
       />
-      <Footer/>
+      <Footer />
     </>
   );
 }
