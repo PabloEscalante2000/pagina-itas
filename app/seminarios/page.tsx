@@ -122,13 +122,10 @@ export default function Seminarios() {
               Seminarios y Talleres
             </h2>
             <p className="font-neulis-sans text-gold text-xl mb-4">
-              Espacios de aprendizaje para padres, docentes y público general
+              Espacios de aprendizaje abiertos a todo público
             </p>
             <p className="font-neulis-sans text-ocean/80 text-lg leading-relaxed">
-              Además de la formación profesional, ITAS desarrolla espacios de aprendizaje dirigidos a padres, docentes y público en general, que buscan comprender mejor temas relacionados con la experiencia humana, los vínculos y el desarrollo.
-            </p>
-            <p className="font-neulis-sans text-ocean/80 text-lg leading-relaxed mt-4">
-              Estos espacios están diseñados con un <strong className="text-ocean">lenguaje claro, accesible y profundo</strong>, sin perder el rigor conceptual, pero evitando el tecnicismo innecesario.
+              Además de la formación profesional en psicoterapia, ITAS desarrolla espacios de aprendizaje para todas las personas interesadas en comprender mejor la experiencia humana, los vínculos y el desarrollo —especialmente padres, docentes y cuidadores.
             </p>
           </div>
         </div>
