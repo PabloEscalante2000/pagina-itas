@@ -22,13 +22,13 @@ function Footer() {
               Instituto Triádico de Análisis del Sujeto
             </p>
             <div className="flex gap-4 mt-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-gold transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61587337855194" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-gold transition-colors">
                 <Facebook className="size-5" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-gold transition-colors">
+              <a href="https://pe.linkedin.com/in/instituto-tri%C3%A1dico-de-an%C3%A1lisis-del-sujeto-itas-5434243a6" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-gold transition-colors">
                 <Linkedin className="size-5" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-gold transition-colors">
+              <a href="https://www.instagram.com/itas.instituto/" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-gold transition-colors">
                 <Instagram className="size-5" />
               </a>
             </div>
@@ -64,10 +64,10 @@ function Footer() {
                 <Link href="/formacion" className="text-sm hover:text-gold transition-colors">Programas formativos</Link>
               </li>
               <li>
-                <Link href="/seminarios" className="text-sm hover:text-gold transition-colors">Talleres abiertos</Link>
+                <Link href="/seminarios" className="text-sm hover:text-gold transition-colors">Nuestros talleres</Link>
               </li>
               <li>
-                <Link href="/editorial" className="text-sm hover:text-gold transition-colors">Libros y publicaciones</Link>
+                <a href="https://elamoresundelirio.com/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-gold transition-colors">Libros y publicaciones</a>
               </li>
             </ul>
           </div>
