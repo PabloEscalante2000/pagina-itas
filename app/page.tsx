@@ -7,20 +7,20 @@ import Footer from "@/components/Footer";
 const pilares = [
   {
     icon: GraduationCap,
-    title: "Formación para terapeutas",
-    description: "Programas formativos, diplomados y seminarios clínicos especializados para profesionales de la salud mental.",
+    title: "Formación profesional",
+    description: "Formación especializada para psicólogos, psicoterapeutas y educadores que buscan profundizar su práctica clínica. Programas formativos, diplomados, seminarios clínicos y espacios de reflexión teórica.",
     href: "/formacion",
   },
   {
     icon: Users,
     title: "Seminarios y talleres abiertos",
-    description: "Espacios de aprendizaje para padres, docentes y público general sobre infancia, vínculos y subjetividad.",
+    description: "Espacios de aprendizaje para padres, docentes y público general sobre infancia, adolescencia, vínculos familiares, emociones y subjetividad en el mundo contemporáneo.",
     href: "/seminarios",
   },
   {
     icon: BookOpen,
-    title: "Editorial especializada",
-    description: "Libros académicos, ensayos clínicos y cuentos infantiles con enfoque terapéutico.",
+    title: "ITAS Editorial",
+    description: "Editorial especializada en contenidos terapéuticos, clínicos y psicoeducativos. Libros académicos y cuentos infantiles que respetan la inteligencia emocional del lector.",
     href: "/editorial",
   },
 ];
@@ -83,7 +83,7 @@ export default function Home() {
             Instituto Triádico de Análisis del Sujeto
           </h3>
           <p className="mt-6 max-w-3xl font-neulis-sans text-center text-lg md:text-xl">
-            Una marca que forma, piensa y crea en salud mental. Dedicados a la formación, la reflexión clínica y la producción de contenidos terapéuticos.
+            Un instituto dedicado a la formación, la reflexión clínica y la producción de conocimiento en salud mental. Un espacio donde la clínica, la teoría y la divulgación rigurosa se articulan desde una posición ética y académica clara.
           </p>
           <Link
             href="/nosotros"
@@ -102,7 +102,7 @@ export default function Home() {
               ¿Qué es ITAS?
             </h2>
             <p className="font-neulis-sans text-ocean/80 text-lg">
-              ITAS es tres cosas en una sola marca, claramente diferenciadas pero profundamente conectadas. Un espacio donde la clínica, la teoría y la divulgación se encuentran.
+              ITAS desarrolla su labor en tres líneas complementarias y articuladas, que comparten una misma concepción de la subjetividad y un mismo compromiso con el rigor conceptual, la ética clínica y la responsabilidad en la transmisión del conocimiento.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -152,7 +152,7 @@ export default function Home() {
             Teoría de la Mente Triádica-Dialéctica (TMTD)
           </h3>
           <p className="max-w-3xl font-neulis-sans text-lg md:text-xl mb-12">
-            Un enfoque que comprende la experiencia humana más allá de diagnósticos rígidos, modas terapéuticas o respuestas simplistas, ofreciendo una comprensión más compleja, humana y contemporánea del malestar psíquico.
+            Un marco teórico y epistemológico que propone comprender la experiencia humana como una articulación dinámica entre tres registros irreductibles: el cuerpo, las emociones y el simbolismo. Un enfoque que no busca sumar una escuela más, sino ofrecer un marco de lectura integrador.
           </p>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl">
             {enfoques.map((enfoque, index) => (
@@ -196,7 +196,10 @@ export default function Home() {
                 El propósito de ITAS es <strong>formar, pensar y producir conocimiento con sentido</strong>.
               </p>
               <p className="font-neulis-sans text-ocean/70">
-                No buscamos simplificar lo complejo, ni vender soluciones mágicas, ni reducir la experiencia humana a fórmulas rápidas. Buscamos acompañar procesos de comprensión, formar profesionales con criterio, y ofrecer contenidos que dejen huella.
+                No buscamos simplificar lo complejo, ni vender soluciones mágicas, ni reducir la experiencia humana a fórmulas rápidas.
+              </p>
+              <p className="font-neulis-sans text-ocean/70">
+                Buscamos acompañar procesos de comprensión, formar profesionales con criterio y ofrecer contenidos que dejen huella.
               </p>
               <p className="font-neulis-sans text-ocean/70 italic">
                 "No creemos en recetas. Creemos en la formación que transforma, en la reflexión que incomoda para sanar y en la palabra que da sentido al sufrimiento contemporáneo."

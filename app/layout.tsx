@@ -5,7 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 export const metadata: Metadata = {
   title: "ITAS | Instituto Triádico de Análisis del Sujeto",
   description:
-    "Instituto dedicado a la formación, reflexión clínica y producción de contenidos terapéuticos. Formación para profesionales, seminarios para padres y docentes, y editorial especializada basada en la TMTD.",
+    "Instituto dedicado a la formación, la reflexión clínica y la producción de conocimiento en salud mental. Un espacio donde la clínica, la teoría y la divulgación rigurosa se articulan desde una posición ética y académica clara, basado en la Teoría de la Mente Triádica-Dialéctica (TMTD).",
   keywords: [
     "ITAS",
     "Instituto Triádico de Análisis del Sujeto",
@@ -13,12 +13,16 @@ export const metadata: Metadata = {
     "TMTD",
     "Teoría de la Mente Triádica Dialéctica",
     "formación terapeutas",
+    "formación profesional salud mental",
     "seminarios psicología",
     "talleres psicología",
     "formación psicoterapéutica",
     "editorial terapéutica",
     "cuentos infantiles terapéuticos",
+    "libros académicos psicología",
     "César Escalante",
+    "subjetividad contemporánea",
+    "ética clínica",
     "Miraflores",
     "Lima",
     "Perú",
@@ -30,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ITAS | Instituto Triádico de Análisis del Sujeto",
     description:
-      "Una marca que forma, piensa y crea en salud mental. Formación, seminarios y editorial especializada basada en la TMTD.",
+      "Instituto dedicado a la formación, la reflexión clínica y la producción de conocimiento en salud mental. Un espacio donde la clínica, la teoría y la divulgación rigurosa se articulan.",
     url: "https://institutoitas.com",
     siteName: "ITAS",
     locale: "es_PE",
@@ -48,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ITAS | Instituto Triádico de Análisis del Sujeto",
     description:
-      "Una marca que forma, piensa y crea en salud mental. Formación, seminarios y editorial especializada.",
+      "Instituto dedicado a la formación, reflexión clínica y producción de conocimiento en salud mental. Formación profesional, seminarios y editorial especializada.",
     images: ["/assets/itas_banner.png"],
   },
   robots: {

@@ -97,13 +97,16 @@ export default function TMTD() {
             </h2>
             <div className="font-neulis-sans text-ocean/80 space-y-4 text-lg">
               <p>
-                <strong className="text-ocean">Triádica</strong> porque reconoce tres dimensiones irreductibles de la experiencia humana: cuerpo, emoción y símbolo. Ninguna puede reducirse a las otras, y todas están presentes en cada momento de nuestra vida psíquica.
+                <strong className="text-ocean">Triádica</strong> porque reconoce tres registros irreductibles de la experiencia humana: el cuerpo, las emociones y el simbolismo. Ninguno puede reducirse a los otros, y todos están presentes en cada momento de nuestra vida psíquica.
               </p>
               <p>
                 <strong className="text-ocean">Dialéctica</strong> porque estas dimensiones no existen aisladas, sino en constante interacción, tensión y transformación mutua. Lo que sentimos modifica cómo habitamos el cuerpo; lo que nombramos transforma lo que sentimos; lo que vivimos corporalmente condiciona lo que podemos simbolizar.
               </p>
               <p>
-                Esta perspectiva nos aleja tanto del reduccionismo biológico como del idealismo simbólico, proponiendo una comprensión integral que respeta la complejidad de lo humano.
+                Desde esta perspectiva, la subjetividad no puede reducirse a diagnósticos rígidos, a variables aisladas ni a explicaciones unidimensionales. El sufrimiento psíquico se organiza en la tensión y mediación entre estos registros, en contextos históricos, vinculares y culturales concretos.
+              </p>
+              <p>
+                La TMTD no busca sumar una escuela más al campo de la psicoterapia, sino ofrecer un marco de lectura integrador, capaz de dialogar críticamente con distintos enfoques sin diluir sus diferencias ni absolutizarlas.
               </p>
             </div>
           </div>
