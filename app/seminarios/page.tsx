@@ -72,7 +72,7 @@ export default function Seminarios() {
 
               <blockquote className="border-l-4 border-gold pl-4 my-8">
                 <p className="font-neulis-sans text-white/90 italic text-lg">
-                  "No siempre sufrimos por lo que pasó, sino por lo que nuestra mente concluyó con muy pocas pruebas."
+                  &quot;No siempre sufrimos por lo que pasó, sino por lo que nuestra mente concluyó con muy pocas pruebas.&quot;
                 </p>
               </blockquote>
 
@@ -97,16 +97,15 @@ export default function Seminarios() {
               </div>
             </div>
 
-            {/* Imagen */}
+            {/* Video */}
             <div className="order-1 md:order-2 flex justify-center">
               <div className="relative">
                 <div className="absolute -inset-4 bg-gold/20 rounded-3xl blur-2xl"></div>
-                <Image
-                  src="/assets/itas_libro.png"
-                  alt="Seminario El amor es un delirio - César Escalante"
-                  width={400}
-                  height={600}
-                  className="relative rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500"
+                <video
+                  src="/assets/video_eaeud_cesar.mp4"
+                  controls
+                  playsInline
+                  className="relative rounded-2xl shadow-2xl w-full max-w-md"
                 />
               </div>
             </div>

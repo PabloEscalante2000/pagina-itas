@@ -75,7 +75,7 @@ export default function Home() {
         style={{ backgroundImage: "url('/assets/itas_banner.png')" }}
       >
         <div className="absolute inset-0 bg-ocean/60"></div>
-        <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center text-white">
+        <div className="relative z-10 flex min-h-screen flex-col items-center justify-center pt-44 px-6 text-center text-white">
           <h1 className="font-neulis-neue text-5xl font-bold md:text-7xl">
             Bienvenidos a ITAS
           </h1>
@@ -130,9 +130,17 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="flex items-start gap-4 max-w-4xl mx-auto">
             <span className="text-gold text-2xl">📌</span>
-            <p className="font-neulis-sans text-ocean">
-              <strong>Importante:</strong> ITAS no ofrece terapia ni atención clínica directa al público. Nuestra labor es formativa, académica y editorial.
-            </p>
+            <div className="font-neulis-sans text-ocean">
+              <p>
+                <strong>Importante:</strong> 
+              </p>
+              <p className="mt-2">
+                Si buscas atención clínica, te invitamos a conocer nuestros centros aliados:{" "}
+                <a href="https://grupoeades.org/" target="_blank" rel="noopener noreferrer" className="text-gold font-semibold hover:underline">EADES</a>
+                {" "}y{" "}
+                <a href="https://pseres.pe/" target="_blank" rel="noopener noreferrer" className="text-gold font-semibold hover:underline">PSERES</a>.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -188,7 +196,7 @@ export default function Home() {
               alt="Filosofía ITAS"
               width={400}
               height={400}
-              className="rounded-2xl object-cover md:w-96 w-full"
+              className="rounded-2xl object-cover h-full flex-auto aspect-video object-top"
             />
             <div className="font-neulis-neue text-ocean space-y-6 max-w-xl">
               <h2 className="text-4xl font-bold">Nuestro propósito</h2>
@@ -202,7 +210,7 @@ export default function Home() {
                 Buscamos acompañar procesos de comprensión, formar profesionales con criterio y ofrecer contenidos que dejen huella.
               </p>
               <p className="font-neulis-sans text-ocean/70 italic">
-                "No creemos en recetas. Creemos en la formación que transforma, en la reflexión que incomoda para sanar y en la palabra que da sentido al sufrimiento contemporáneo."
+                &quot;No creemos en recetas. Creemos en la formación que transforma, en la reflexión que incomoda para sanar y en la palabra que da sentido al sufrimiento contemporáneo.&quot;
               </p>
             </div>
           </div>
@@ -250,10 +258,10 @@ export default function Home() {
       <section className="py-20 bg-ocean">
         <div className="container mx-auto px-6 text-center">
           <h2 className="font-neulis-neue text-3xl md:text-4xl font-bold text-white mb-4">
-            ITAS es un lugar para quienes quieren pensar en serio la experiencia humana
+            Formamos terapeutas capaces de comprender lo que insiste
           </h2>
-          <p className="font-neulis-sans text-white/70 max-w-2xl mx-auto mb-8">
-            Formación para terapeutas, espacios de aprendizaje para padres y docentes, y una editorial especializada con un enfoque propio y coherente.
+          <p className="font-neulis-sans text-white/70 max-w-3xl mx-auto mb-8">
+            Psicoterapia contemporánea basada en la integración dialéctica entre psicoanálisis, neurociencias, teoría deconstructiva y modelos cognitivos.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
