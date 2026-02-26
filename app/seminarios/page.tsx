@@ -66,7 +66,7 @@ export default function Seminarios() {
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full">
                   <Calendar className="size-4 text-gold" />
-                  <span className="text-sm font-neulis-sans">21, 28 de marzo y 4 de abril</span>
+                  <span className="text-sm font-neulis-sans">25 de abril | 9:00 am</span>
                 </div>
               </div>
 
