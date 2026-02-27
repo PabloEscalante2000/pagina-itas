@@ -88,8 +88,8 @@ function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="size-5 shrink-0 text-gold" />
-                <a href="mailto:contacto@institutoitas.com" className="text-sm hover:text-gold transition-colors">
-                  contacto@institutoitas.com
+                <a href="mailto:itas@institutoitas.com" className="text-sm hover:text-gold transition-colors">
+                  itas@institutoitas.com
                 </a>
               </li>
             </ul>
