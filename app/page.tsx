@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { GraduationCap, Users, BookOpen, Brain, Heart, Sparkles } from "lucide-react";
 import Footer from "@/components/Footer";
+import BookLaunchPopup from "@/components/BookLaunchPopup";
 
 const pilares = [
   {
@@ -67,6 +68,7 @@ const especialistas = [
 export default function Home() {
   return (
     <>
+      <BookLaunchPopup />
       <Nav />
       {/* Hero */}
       <main
