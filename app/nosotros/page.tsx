@@ -27,8 +27,12 @@ export default function Nosotros() {
     <>
       <Nav />
       {/* Hero */}
-      <section className="bg-ocean pt-32 pb-20">
-        <div className="container mx-auto px-6 text-center">
+      <section
+        className="relative min-h-[50vh] bg-cover bg-center bg-no-repeat flex items-center"
+        style={{ backgroundImage: "url('/assets/itas_banner.png')" }}
+      >
+        <div className="absolute inset-0 bg-ocean/70"></div>
+        <div className="relative z-10 container mx-auto px-6 text-center pt-32 pb-20">
           <h1 className="font-neulis-neue text-4xl md:text-6xl font-bold text-white mb-4">
             Sobre ITAS
           </h1>
@@ -71,62 +75,95 @@ export default function Nosotros() {
               ITAS desarrolla su labor en tres líneas complementarias y articuladas. Estas líneas no funcionan de manera aislada: comparten una misma concepción de la subjetividad y un mismo compromiso con el rigor conceptual, la ética clínica y la responsabilidad en la transmisión del conocimiento.
             </p>
             <div className="space-y-6">
-              <div className="bg-white rounded-2xl p-6 shadow-md">
-                <h3 className="font-neulis-neue text-xl font-semibold text-ocean mb-2">
-                  1. Formación profesional
-                </h3>
-                <p className="font-neulis-sans text-ocean/70 mb-4">
-                  ITAS ofrece formación especializada para psicólogos, psicoterapeutas, educadores y profesionales afines que buscan profundizar su práctica clínica y su comprensión de la subjetividad contemporánea.
-                </p>
-                <p className="font-neulis-sans text-ocean/70 mb-4">
-                  Nuestros programas no están pensados como capacitaciones rápidas ni como entrenamientos técnicos descontextualizados. Formamos profesionales que piensan clínicamente, que leen los fenómenos humanos en su complejidad y que sostienen una posición ética frente al sufrimiento psíquico.
-                </p>
-                <ul className="font-neulis-sans text-ocean/60 text-sm space-y-1 list-disc list-inside">
-                  <li>Programas formativos y diplomados</li>
-                  <li>Seminarios clínicos especializados</li>
-                  <li>Espacios de reflexión teórica y epistemológica</li>
-                  <li>Material académico y bibliografía propia</li>
-                </ul>
+              <div className="bg-white rounded-2xl shadow-md overflow-hidden">
+                <div className="relative h-56 w-full">
+                  <Image
+                    src="/assets/formacion_prof.jpg"
+                    alt="Formación profesional"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-ocean/40"></div>
+                  <h3 className="absolute bottom-4 left-6 font-neulis-neue text-xl font-semibold text-white">
+                    1. Formación profesional
+                  </h3>
+                </div>
+                <div className="p-6">
+                  <p className="font-neulis-sans text-ocean/70 mb-4">
+                    ITAS ofrece formación especializada para psicólogos, psicoterapeutas, educadores y profesionales afines que buscan profundizar su práctica clínica y su comprensión de la subjetividad contemporánea.
+                  </p>
+                  <p className="font-neulis-sans text-ocean/70 mb-4">
+                    Nuestros programas no están pensados como capacitaciones rápidas ni como entrenamientos técnicos descontextualizados. Formamos profesionales que piensan clínicamente, que leen los fenómenos humanos en su complejidad y que sostienen una posición ética frente al sufrimiento psíquico.
+                  </p>
+                  <ul className="font-neulis-sans text-ocean/60 text-sm space-y-1 list-disc list-inside">
+                    <li>Programas formativos y diplomados</li>
+                    <li>Seminarios clínicos especializados</li>
+                    <li>Espacios de reflexión teórica y epistemológica</li>
+                    <li>Material académico y bibliografía propia</li>
+                  </ul>
+                </div>
               </div>
-              <div className="bg-white rounded-2xl p-6 shadow-md">
-                <h3 className="font-neulis-neue text-xl font-semibold text-ocean mb-2">
-                  2. Seminarios, talleres y cursos abiertos
-                </h3>
-                <p className="font-neulis-sans text-ocean/70 mb-4">
-                  Además de la formación profesional, ITAS desarrolla espacios de aprendizaje dirigidos a padres, docentes y público general, interesados en comprender mejor temas vinculados a:
-                </p>
-                <ul className="font-neulis-sans text-ocean/60 text-sm space-y-1 list-disc list-inside mb-4">
-                  <li>Infancia y adolescencia</li>
-                  <li>Vínculos familiares y educativos</li>
-                  <li>Emociones, conducta y desarrollo</li>
-                  <li>Subjetividad en el mundo contemporáneo</li>
-                </ul>
-                <p className="font-neulis-sans text-ocean/70">
-                  Estos espacios están diseñados con un lenguaje claro y accesible, sin perder profundidad conceptual ni rigor teórico. No se trata de charlas motivacionales ni de recetas rápidas, sino de espacios para pensar, comprender y acompañar mejor la experiencia humana.
-                </p>
+              <div className="bg-white rounded-2xl shadow-md overflow-hidden">
+                <div className="relative h-56 w-full">
+                  <Image
+                    src="/assets/seminario.jpg"
+                    alt="Seminarios y talleres"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-ocean/40"></div>
+                  <h3 className="absolute bottom-4 left-6 font-neulis-neue text-xl font-semibold text-white">
+                    2. Seminarios, talleres y cursos abiertos
+                  </h3>
+                </div>
+                <div className="p-6">
+                  <p className="font-neulis-sans text-ocean/70 mb-4">
+                    Además de la formación profesional, ITAS desarrolla espacios de aprendizaje dirigidos a padres, docentes y público general, interesados en comprender mejor temas vinculados a:
+                  </p>
+                  <ul className="font-neulis-sans text-ocean/60 text-sm space-y-1 list-disc list-inside mb-4">
+                    <li>Infancia y adolescencia</li>
+                    <li>Vínculos familiares y educativos</li>
+                    <li>Emociones, conducta y desarrollo</li>
+                    <li>Subjetividad en el mundo contemporáneo</li>
+                  </ul>
+                  <p className="font-neulis-sans text-ocean/70">
+                    Estos espacios están diseñados con un lenguaje claro y accesible, sin perder profundidad conceptual ni rigor teórico. No se trata de charlas motivacionales ni de recetas rápidas, sino de espacios para pensar, comprender y acompañar mejor la experiencia humana.
+                  </p>
+                </div>
               </div>
-              <div className="bg-white rounded-2xl p-6 shadow-md">
-                <h3 className="font-neulis-neue text-xl font-semibold text-ocean mb-2">
-                  3. ITAS Editorial
-                </h3>
-                <p className="font-neulis-sans text-gold text-sm font-medium mb-3">
-                  Conocimiento que se lee, se piensa y se elabora
-                </p>
-                <p className="font-neulis-sans text-ocean/70 mb-4">
-                  ITAS es también una editorial especializada en contenidos terapéuticos, clínicos y psicoeducativos, orientada a la producción de materiales con profundidad conceptual y cuidado ético.
-                </p>
-                <div className="space-y-3">
-                  <div>
-                    <p className="font-neulis-sans text-ocean font-medium text-sm">Libros académicos y clínicos</p>
-                    <p className="font-neulis-sans text-ocean/60 text-sm">
-                      Publicaciones dirigidas a estudiantes, profesionales y lectores interesados en una comprensión rigurosa de la psicoterapia, la psicología y la subjetividad contemporánea.
-                    </p>
-                  </div>
-                  <div>
-                    <p className="font-neulis-sans text-ocean font-medium text-sm">Cuentos infantiles con enfoque terapéutico</p>
-                    <p className="font-neulis-sans text-ocean/60 text-sm">
-                      Relatos pensados para niños, que funcionan como recursos simbólicos y emocionales. No son cuentos moralizantes ni didácticos en exceso, sino historias que respetan la inteligencia emocional del niño y abren espacios de elaboración subjetiva.
-                    </p>
+              <div className="bg-white rounded-2xl shadow-md overflow-hidden">
+                <div className="relative h-56 w-full">
+                  <Image
+                    src="/assets/editorial_nosotros.png"
+                    alt="El amor es un delirio - ITAS Editorial"
+                    fill
+                    className="object-cover object-top"
+                  />
+                  <div className="absolute inset-0 bg-ocean/50"></div>
+                  <h3 className="absolute bottom-4 left-6 font-neulis-neue text-xl font-semibold text-white">
+                    3. ITAS Editorial
+                  </h3>
+                </div>
+                <div className="p-6">
+                  <p className="font-neulis-sans text-gold text-sm font-medium mb-3">
+                    Conocimiento que se lee, se piensa y se elabora
+                  </p>
+                  <p className="font-neulis-sans text-ocean/70 mb-4">
+                    ITAS es también una editorial especializada en contenidos terapéuticos, clínicos y psicoeducativos, orientada a la producción de materiales con profundidad conceptual y cuidado ético.
+                  </p>
+                  <div className="space-y-3">
+                    <div>
+                      <p className="font-neulis-sans text-ocean font-medium text-sm">Libros académicos y clínicos</p>
+                      <p className="font-neulis-sans text-ocean/60 text-sm">
+                        Publicaciones dirigidas a estudiantes, profesionales y lectores interesados en una comprensión rigurosa de la psicoterapia, la psicología y la subjetividad contemporánea.
+                      </p>
+                    </div>
+                    <div>
+                      <p className="font-neulis-sans text-ocean font-medium text-sm">Cuentos infantiles con enfoque terapéutico</p>
+                      <p className="font-neulis-sans text-ocean/60 text-sm">
+                        Relatos pensados para niños, que funcionan como recursos simbólicos y emocionales. No son cuentos moralizantes ni didácticos en exceso, sino historias que respetan la inteligencia emocional del niño y abren espacios de elaboración subjetiva.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

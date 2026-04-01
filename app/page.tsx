@@ -87,6 +87,9 @@ export default function Home() {
           <p className="mt-6 max-w-3xl font-neulis-sans text-center text-lg md:text-xl">
             Un instituto dedicado a la formación, la reflexión clínica y la producción de conocimiento en salud mental. Un espacio donde la clínica, la teoría y la divulgación rigurosa se articulan desde una posición ética y académica clara.
           </p>
+          <p className="mt-4 max-w-2xl font-neulis-sans text-center text-base md:text-lg text-gold/90">
+            ITAS es también una editorial especializada en contenidos terapéuticos, clínicos y psicoeducativos — libros académicos y cuentos infantiles con enfoque en salud mental.
+          </p>
           <Link
             href="/nosotros"
             className="mt-8 bg-gold hover:bg-gold/90 text-white font-neulis-neue px-6 py-3 rounded-full transition-colors"
@@ -138,7 +141,7 @@ export default function Home() {
               </p>
               <p className="mt-2">
                 Si buscas atención clínica, te invitamos a conocer nuestros centros aliados:{" "}
-                <a href="https://grupoeades.org/" target="_blank" rel="noopener noreferrer" className="text-gold font-semibold hover:underline">EADES</a>
+                <a href="https://eadespsicoterapia.com/" target="_blank" rel="noopener noreferrer" className="text-gold font-semibold hover:underline">EADES</a>
                 {" "}y{" "}
                 <a href="https://pseres.pe/" target="_blank" rel="noopener noreferrer" className="text-gold font-semibold hover:underline">PSERES</a>.
               </p>

@@ -59,15 +59,18 @@ export default function Editorial() {
 
             {/* Imagen del libro */}
             <div className="order-1 md:order-2 flex justify-center">
-              <div className="relative">
-                <div className="absolute -inset-4 bg-gold/20 rounded-3xl blur-2xl"></div>
-                <Image
-                  src="/assets/itas_libro.png"
-                  alt="El amor es un delirio - César Escalante"
-                  width={400}
-                  height={600}
-                  className="relative rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500"
-                />
+              <div className="relative flex items-center justify-center">
+                <div className="absolute -inset-8 bg-gold/30 rounded-full blur-3xl opacity-60"></div>
+                <div className="absolute -inset-2 bg-white/5 rounded-3xl blur-md"></div>
+                <div className="relative p-2 rounded-3xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 shadow-[0_0_60px_rgba(0,0,0,0.5)]">
+                  <Image
+                    src="/assets/itas_libro.png"
+                    alt="El amor es un delirio - César Escalante"
+                    width={360}
+                    height={540}
+                    className="relative rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500 drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)]"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -164,11 +167,14 @@ export default function Editorial() {
       <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto bg-gold/10 rounded-3xl p-10">
-            <h2 className="font-neulis-neue text-2xl font-bold text-ocean mb-4">
+            <h2 className="font-neulis-neue text-2xl font-bold text-ocean mb-2">
               Sobre nuestros cuentos infantiles
             </h2>
+            <span className="inline-block bg-gold text-white font-neulis-neue font-semibold text-sm px-4 py-1 rounded-full mb-6 tracking-widest uppercase">
+              Próximamente
+            </span>
             <p className="font-neulis-sans text-ocean/80 text-lg">
-              Nuestros cuentos <strong>no son moralizantes ni didácticos en exceso</strong>. Son relatos que respetan la inteligencia emocional del niño y abren espacios de elaboración interna, permitiendo que cada lector encuentre su propio sentido en la historia.
+              Nuestros cuentos infantiles están pensados para educar a los niños desde el respeto por sus emociones, la diversidad, el pensamiento crítico y cada etapa de su desarrollo. Mediante personajes únicos, realidades diversas e historias profundas, invitamos tanto a niños como a padres a reflexionar sobre la salud mental, los vínculos y el autoconocimiento.
             </p>
           </div>
         </div>
