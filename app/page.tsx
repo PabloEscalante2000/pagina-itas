@@ -154,7 +154,7 @@ export default function Home() {
       <section
         id="tmtd"
         className="relative min-h-screen bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/assets/itas_teoria.png')" }}
+        style={{ backgroundImage: "url('/assets/fondo_clases.jpeg')" }}
       >
         <div className="absolute inset-0 bg-ocean/70"></div>
         <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center text-white py-20">

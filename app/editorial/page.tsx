@@ -64,7 +64,7 @@ export default function Editorial() {
                 <div className="absolute -inset-2 bg-white/5 rounded-3xl blur-md"></div>
                 <div className="relative p-2 rounded-3xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 shadow-[0_0_60px_rgba(0,0,0,0.5)]">
                   <Image
-                    src="/assets/itas_libro.png"
+                    src="/assets/eaeud_hero.webp"
                     alt="El amor es un delirio - César Escalante"
                     width={360}
                     height={540}
